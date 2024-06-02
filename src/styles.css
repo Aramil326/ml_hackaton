@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFEFE;
+    color: #425F33;
+}
+
+button {
+    background-color: #7AA73E;
+    color: #FEFEFE !important;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.welcome-screen, .form-container, .upload-container, .report-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-container {
+    box-shadow: 10px 10px 20px #ccc, -10px -10px 20px #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+}
+
+.upload-container, .report-container {
+    padding: 20px;
+}
+
+#root {
+    background-image: url('assets/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .form-container, .upload-container, .report-container {
+        width: 90%;
+    }
+}
+
